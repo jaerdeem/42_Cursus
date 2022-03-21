@@ -1,0 +1,166 @@
+LIBFT
+
+| FT_ATOI.C
+
+Öncelikle boşluk varsa veya o anki değer ascii tablosunda 9 ile 13 arasında ise atlıyor. Eğer eksi görürse neg’e eksi bir atıyor. Eğer artı görürse atlıyor. Döngüde o anki değerin rakam olup olmadığını kontrol ediyor. Eğer rakamsa değeri ascii tablosunda yazılabilecek hale çeviriyor ve neg ile çarpıyor. Diğer koşullarda integerin minimum ve maksimum değerini kontrol ediyoruz. En son olarak ekrana değeri yazdırıyor.
+
+| FT_ BZERO.C
+
+Kullanılan fonksiyonun ramde açtığı yeri sıfırlar.
+
+| FT_CALLOC.C
+
+Bzero fonksiyonun yaptığı işlemi memoryde yapar.
+
+| FT_ISALNUM.C
+
+Girilen değerin harf veya rakam mı olduğunu kontrol ediyor.
+
+| FT_ISALPHA.C
+
+Girilen değerin harf olup olmadığını kontrol ediyor.
+
+| FT_ISASCII.C
+
+Girilen değerin ascii tablosunda olup olmadığını kontrol eder.
+
+| FT_ISDIGIT.C
+
+Girilen değerin rakam olup olmadığını kontrol ediyor.
+
+| FT_ISPRINT.C
+
+Girilen değerin yazdırılabilir olup olmadığını kontrol eder.
+
+| FT_ITOA.C
+
+Atoinin tersi olarak integer değerini char değerine çevirir.
+
+| FT_MEMCHR.C
+
+Girilen dizinin içinde belirlediğimiz yere kadar belirlediğimiz karakteri arar ve bulduğu değer dahil sonrasını döndürür.
+
+| FT_MEMCMP.C
+
+S1 ve S2 dizilerini birbiri arasında belirledimiz yere kadar kontrol edip ilk farklılık gördüğü değerleri ascii tablosunda birbirinden çıkarıp ekrana yazar. Strchr fonksiyonundan farklı olarak bu fonksiyon bu işlemi memoryde yapar.
+
+| FT_MEMCPY.C
+
+İlk dizimizdeki değerli belirlediğimiz yere kadar ikinci dizimize kopyalar.
+
+| FT_MEMMOVE.C
+
+Memcpyden farklı olarak kopyalanacak dizimizin belirlediğimiz yerinden başlayarak kopyalar. Bu şekilde örtüşmeleri engeller.
+
+| FT_MEMSET.C
+
+Dizimizdeki harfleri belirlediğimiz yere kadar belirlediğimiz değer ile değiştirir. 
+
+| FT_PUTCHAR_FD.C
+
+Belirttiğimiz dosyanın içine belirlediğimiz değeri yazar.
+
+| FT_PUTENDL_FD.C
+
+Girilen değeri null olana kadar adım adım ekrana yazdırır ve satır atlar.
+
+| FT_PUTNBR_FD.C
+
+Putnbr fonksiyonundan farklı olarak girilen sayıyı dosyanın içine yazdırır.
+
+| FT_PUSTR_FD.C
+
+Girilen dizinin uzunluğunu kontrol edip dosyanın içine yazdırır.
+
+| FT_SPLIT.C
+
+Girilen diziyi ayraç olarak belirlediğimiz değer görene kadar okur ve ayraç görünce ayraç olarak belirlediğimiz değerden öncesini bir kelime olarak kabul eder. Sonrasında dizimiz bitene kadar kadar bu işlem devam eder. Devamında hafızada tutulan bu kelimeleri malloc fonksiyonuna gönderip malloc fonksiyonunda bu kelimelerin boyutu kadar yer açar. Sonrasında açtığı bu yere hafızasındaki kelimeleri har harf kopyalar ve ekrana yazdırır.
+
+| FT_STRCHR.C
+
+S1 ve S2 dizilerini birbiri arasında belirledimiz yere kadar kontrol edip ilk farklılık gördüğü değerleri ascii tablosunda birbirinden çıkarıp ekrana yazar.
+
+| FT_STRDUP.C
+
+Malloc fonksiyonu ile girilen dizinin boyutu kadar yer açıp açılan yere diziyi kopyalar.
+
+| FT_STRITERI.C
+
+Stringin bütün karakterlerini f fonksiyonuna maruz bırakır.
+
+| FT_STRJOIN.C
+
+Belirleyeceğimiz iki diziyi sırayla malloca atıp ard arda yazar.
+
+| FT_STRLCAT.C
+
+Kaynak dizimizi belirlediğimiz uzunluk kadar hedef dizine yapıştırır.
+
+| FT_STRLCPY.C
+
+Kaynak dizimizi belirlediğimiz uzunluk kadar hedef dizine yapıştırır.
+
+| FT_STRLEN.C
+
+Girilen dizinin uzunluğunu ekrana yazdırır.
+
+| FT_STRMAPI.C
+
+Striteri fonksiyonundan farklı olarak f fonksiyonuna maruz bıraklan her değeri yeni bir diziye yazdırır.
+
+| FT_STRNCMP.C
+
+Memcmp fonksiyonundan farklı olarak belirlediğimiz yere kadar karşılaştırır ve bu karşılaştırmanın sonucu olarak girilen return değerlerini döndürür.
+
+| FT_STRNSTR.C
+
+Girilen dizimizin içinde belirlediğimiz diziyi arar ve belirlediğimiz diziyi ve  sonrasını ekrana yazdırır.
+
+| FT_STRCHR.C
+
+Belirlediğimiz dizinin içinde belirlediğimiz karakteri arayıp bulduktan sonra geri kalanını yazdıracaktık lakin bunun kolay versiyonu olarak belirlediğimiz harfi belirlediğimiz dizinin sonundan başlayarak aradık. İlk karşılaştığı değerden sonrasını ekrana yazdırdık.
+
+| FT_STRTRIM.C
+
+Dizimin içinde belirlediğimiz diziyi arayıp bulur ve bulduğu yerler başta veya sonda ise bu kısımları keser. Kalan kısmı yeni bir dizi haline çevirir ve ekrana yazdırır.
+
+| FT_SUBSTR.C
+
+Dizimizin içinde belirlediğimiz başlangıç noktasından itibaren belirlediğimiz değer sayısı kadar alıp dizi haline getirir ve bu diziyi ekrana yazar.
+
+| FT_TOLOWER.C
+
+Girilen dizideki harfleri küçültür.
+
+| FT_TOUPPER.C
+
+Girilen dizideki harfleri büyültür.
+
+| LIBFT.H
+
+Yazdığımız bütün fonksiyonları libft adlı kütüphanemize dahil ettik.
+
+| MAKEFILE
+
+Öncelikle kütüphanemize derlendikten sonraki sahip olacağı adı girdik. Sonrasında bir liste oluşturup bu listenin içine fonksiyonlarımızı girdik. Sonrasında listemizdeki .c uzantılı dosyalarımızı .o uzantılı haline çevirerek objede tuttuk. 
+
+CC = Derleyicimiz
+CFLAG = Flaglarımız
+NAME = Kütüphanemizin Adı
+
+All komutu name’i çalıştırır.
+.c.o dosyalarımızı gcc ve flaglerle beraber derler. 
+Name ve obje dosyalarını arşivler fakat bize göstermez.
+Clean yeni oluşan .o uzantılı dosyaları siler.
+Fclean clean ile aynı işlevi görür fakat cleandan farklı olarak nameyide siler.
+Re dosyaları siler ve tekrardan oluşturur.
+Bonus bonus dosyalarını arşivler.
+Norm norminette kurallarını kontrol eder.
+.PHONY yanına yazılan değerlerin komut olduğunu bilgisayara bildirir.
+
+
+
+
+| FT_SPLIT
+
+https://pythontutor.com/c.html#code=%23include%20%3Cstdlib.h%3E%0A%23include%20%3Cstdio.h%3E%0A%0Achar%20%20%20%20*ft_substr%28char%20const%20*s,%20unsigned%20int%20start,%20size_t%20len%29%0A%7B%0A%20%20%20%20char%20%20%20%20*new_str%3B%0A%20%20%20%20size_t%20%20%20%20i%3B%0A%20%20%20%20size_t%20%20%20%20j%3B%0A%0A%20%20%20%20new_str%20%3D%20%28char%20*%29malloc%28len%20%2B%201%29%3B%0A%20%20%20%20if%20%28!s%20%7C%7C%20!new_str%29%0A%20%20%20%20%20%20%20%20return%20%280%29%3B%0A%20%20%20%20i%20%3D%20start%3B%0A%20%20%20%20j%20%3D%200%3B%0A%20%20%20%20while%20%28i%20%3C%20strlen%28s%29%20%26%26%20j%20%3C%20len%29%0A%20%20%20%20%20%20%20%20new_str%5Bj%2B%2B%5D%20%3D%20s%5Bi%2B%2B%5D%3B%0A%20%20%20%20new_str%5Bj%5D%20%3D%20'%5C0'%3B%0A%20%20%20%20return%20%28new_str%29%3B%0A%7D%0A%0Astatic%20int%20%20%20%20wordcounter%28const%20char%20*s,%20char%20c%29%0A%7B%0A%20%20%20%20int%20%20%20%20i%3B%0A%0A%20%20%20%20i%20%3D%200%3B%0A%20%20%20%20while%20%28*s%29%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20while%20%28*s%20%3D%3D%20c%20%26%26%20*s%29%0A%20%20%20%20%20%20%20%20%20%20%20%20s%2B%2B%3B%0A%20%20%20%20%20%20%20%20if%20%28*s%20%3D%3D%20'%5C0'%29%0A%20%20%20%20%20%20%20%20%20%20%20%20return%20%28i%29%3B%0A%20%20%20%20%20%20%20%20while%20%28*s%20!%3D%20c%20%26%26%20*s%29%0A%20%20%20%20%20%20%20%20%20%20%20%20s%2B%2B%3B%0A%20%20%20%20%20%20%20%20i%2B%2B%3B%0A%20%20%20%20%7D%0A%20%20%20%20return%20%28i%29%3B%0A%7D%0A%0Astatic%20int%20%20%20%20charcounter%28const%20char%20*s,%20char%20c%29%0A%7B%0A%20%20%20%20int%20%20%20%20i%3B%0A%0A%20%20%20%20i%20%3D%200%3B%0A%20%20%20%20while%20%28*s%20%26%26%20%28*s%20!%3D%20c%29%29%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20i%2B%2B%3B%0A%20%20%20%20%20%20%20%20s%2B%2B%3B%0A%20%20%20%20%7D%0A%20%20%20%20return%20%28i%29%3B%0A%7D%0A%0Achar%20%20%20%20**ft_split%28char%20const%20*s,%20char%20c%29%0A%7B%0A%20%20%20%20char%20%20%20%20**ret%3B%0A%20%20%20%20int%20%20%20%20%20%20%20%20retindex%3B%0A%0A%20%20%20%20if%20%28!s%29%0A%20%20%20%20%20%20%20%20return%20%280%29%3B%0A%20%20%20%20retindex%20%3D%200%3B%0A%20%20%20%20ret%20%3D%20malloc%28sizeof%28char%20*%29%20*%20wordcounter%28s,%20c%29%20%2B%201%29%3B%0A%20%20%20%20if%20%28!ret%29%0A%20%20%20%20%20%20%20%20return%20%280%29%3B%0A%20%20%20%20while%20%28*s%29%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20while%20%28*s%20%3D%3D%20c%20%26%26%20*s%29%0A%20%20%20%20%20%20%20%20%20%20%20%20s%2B%2B%3B%0A%20%20%20%20%20%20%20%20if%20%28*s%20%3D%3D%20'%5C0'%29%0A%20%20%20%20%20%20%20%20%20%20%20%20break%20%3B%0A%20%20%20%20%20%20%20%20ret%5Bretindex%5D%20%3D%20ft_substr%28s,%200,%20charcounter%28s,%20c%29%29%3B%0A%20%20%20%20%20%20%20%20retindex%2B%2B%3B%0A%20%20%20%20%20%20%20%20s%20%3D%20s%20%2B%20charcounter%28s,%20c%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20ret%5Bretindex%5D%20%3D%20NULL%3B%0A%20%20%20%20return%20%28ret%29%3B%0A%7D%0Aint%20main%28%29%0A%7B%0A%20%20char%20b%20%5B%5D%20%3D%20%22muhammed,erdem,42ecole%22%3B%0A%20%20char%20ayrac%20%3D%20','%3B%0A%20%20printf%28%22%25s%22,%20ft_split%28b,%20ayrac%29%29%3B%0A%7D&curInstr=317&mode=display&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D
