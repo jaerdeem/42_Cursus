@@ -1,0 +1,65 @@
+GETNEXTLINE
+
+| GET_NEXT_LINE.C
+
+|| ÜST KISIM
+
+Fonksiyonumuzun içine integer tipinde fd ve rd_bytes, char tipinde *left_str ve *buff değişkenlerimizi gönderdik.
+
+Malloc fonksiyonuyla get_next_line.h dosyamızın içinde belirlediğimiz BUFFER_SIZE değerinin bir fazlası kadar yer açıp bu yere buff adını verdik.
+
+Öncelikle bu alanın açılıp açılmadığını kontrol ettik. 
+
+Sonrasında rd_bytes değişkenimizi bire eşitledik.
+
+Belirlenmiş dizi içinde belirlediğimiz karakteri arayıp ekrana değerler döndüren ft_strchr fonksiyonu ile birlikte dizinin içinde satır atlama operatörünü aradık. ft_strchr fonksiyonumuz dizimizin içinde satır atlama operatörünü görünce bir değerini döndürür. Biz bu durumların değilini aradığımız için ve birin değili de sıfır olduğu için döngüye girmez. ft_strchrnin sıfır döndürdüğü yani değilinin bir olduğu durumlarda döngüye girer.
+
+Döngümüzün içinde fd adındaki dosyadan BUFFER_SIZE kadar okuyup buff’a yazar.
+
+Eğer rd_bytes değerimiz eski bire eşit olursa buff’ı boşlatıp ekrana null değerini döndürüyor. 
+
+Buff’ın sonuna null değerini koyar. Koymasının sebebi bir alt satırda kullandığımız ft_strjoin fonksiyonunun çalışma mantığı ile alakalıdır.
+
+Sonrasında stryi döndürür.
+
+|| ALT KISIM
+
+Fonksiyonumuzun içine char tipinde *line, static char tipinde *left_str ve int tipinde fd değerlerini gönderdik.
+
+Sonrasında fd sıfırdan küçükse veya BUFFER_SIZE sıfırdan küçükse error kodunu yani sıfırı döndürdük. 
+
+left_str’nin içine üsteki fonksiyondan çıkan değeri gönderdik.
+
+left_str’nin içi boş mu diye kontrol ettik.
+
+Sonrasında ft_get_line fonksiyonundan çıkan değeri line’a ve ft_new_left_str fonksiyonundan çıkan değeri ise left_str’ye attık.
+
+
+| GET_NEXT_LINE.H
+
+Fonksiyonları dahil edip bir kütüphane oluşturduk.
+
+| GET_NEXT_LINE_BONUS.C
+
+Normal get_next_line.c dosyamızdaki fonksiyonlardan farklı olarak birden fazla dosyadan satır okuyabilir.
+
+| GET_NEXT_LINE_BONUS.H
+
+Bonus fonksiyonlarımızı dahil edip bir kütüphane oluşturduk.
+
+| GET_NEXT_LINE_UTILS.C
+
+Yardımcı fonksiyonlarımız.
+
+| GET_NEXT_LINE_UTILS_BONUS.C
+
+Yardımcı bonus fonksiyonlarımız.
+
+
+
+|| ÖNEMLİ NOT
+
+get_next_line.c dosyamızdaki "while (!ft_strchr(left_str, '\n') && rd_bytes != 0)" döngüsüne 1 değeri gördüğü zaman girer. 
+
+Dizinin içinde satır atlama gördüğü zaman 1 döndürür 1in değili 0 olduğu için döngüye girmez.
+
