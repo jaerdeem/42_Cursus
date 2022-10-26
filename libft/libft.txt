@@ -1,4 +1,4 @@
-LIBFT 
+LIBFT
 
 | FT_ATOI.C
 
